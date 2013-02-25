@@ -1,4 +1,4 @@
-self: play -> thymeleaf 1.5
+self: jp.neopa.play -> thymeleaf 1.5
 
 require:
     - play

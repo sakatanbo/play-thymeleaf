@@ -2,7 +2,7 @@
 
 require:
     - play
-    - play -> thymeleaf [1.0,)
+    - jp.neopa.play -> thymeleaf [1.0,)
     - yabe -> testmodule 0.1
 repositories:
     - My modules:
@@ -10,4 +10,8 @@ repositories:
         artifact:   ${application.path}/../[module]
         contains:
             - yabe -> *
-    
+    - Custom modules:
+        type:       http
+        artifact:   "http://labs.neopa.jp/playmodules/[module]-[revision].zip"
+        contains:
+            - jp.neopa.play -> *
